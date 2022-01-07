@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Elpanini</string>
+
+    <!-- Spinner Options Category -->
+    <string-array name="CategoryArray">
+        <item>halal</item>
+        <item>kosher</item>
+        <item>vegan</item>
+        <item>glutenvrij</item>
+    </string-array>
+    <string name="title_login">Welkom bij El Panini</string>
+    <string name="enter_your_email">Email</string>
+    <string name="enter_your_password">Password</string>
+    <string name="button_register">REGISTER</string>
+    <string name="enter_your_username">username</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu">Menu</string>
+    <string name="category">Categorieen</string>
+    <string name="broodjes">Broodjes</string>
+    <string name="title_extra_beste_broodjes_alleen_bij_ons">BESTE BROODJES ALLEEN BIJ ONS</string>
+    <string name="button_login">LOGIN</string>
+    <string name="title_register">REGISTER</string>
+    <string name="username">Username</string>
+    <string name="title_home">Menu</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="textbrood">broodje</string>
+    <string name="buttonDetails">details</string>
+</resources>
