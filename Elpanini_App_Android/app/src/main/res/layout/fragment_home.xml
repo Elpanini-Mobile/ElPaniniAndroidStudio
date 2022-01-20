@@ -3,7 +3,11 @@
 xmlns:tools="http://schemas.android.com/tools"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 tools:context=".TitleFragment">
-
+    <data>
+        <variable
+            name="viewModel"
+            type="be.samysah.elpanini.ui.home.HomeFragment"/>
+    </data>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -130,8 +134,9 @@ tools:context=".TitleFragment">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
-
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:id="@+id/buttonDetails">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -144,23 +149,37 @@ tools:context=".TitleFragment">
                         app:cardCornerRadius="8dp">
 
                         <TextView
+                            android:id="@+id/tit"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="100dp"
                             android:fontFamily="@font/opensans"
                             android:gravity="center"
-                            android:text="Tonijn"
+                            android:text="@+id/tit"
                             android:textColor="@color/black"
                             android:textSize="15dp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="130dp"
+                            android:fontFamily="@font/opensans"
+                            android:gravity="center"
+                            android:text=",00€"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/prijs"
+                            android:layout_width="104dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="130dp"
                             android:fontFamily="@font/opensans"
                             android:gravity="center"
-                            android:text="2,50€"
+                            android:text="@+id/prijs"
                             android:textColor="@color/black"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -172,10 +191,8 @@ tools:context=".TitleFragment">
                             android:layout_margin="5dp"
                             app:srcCompat="@drawable/tonijn" />
 
-
                     </androidx.cardview.widget.CardView>
                 </RelativeLayout>
-
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -204,7 +221,7 @@ tools:context=".TitleFragment">
                             android:layout_marginTop="130dp"
                             android:fontFamily="@font/opensans"
                             android:gravity="center"
-                            android:text="3,50€"
+                            android:text="4,00€"
                             android:textColor="@color/black"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -226,7 +243,8 @@ tools:context=".TitleFragment">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:clickable="true">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -256,7 +274,7 @@ tools:context=".TitleFragment">
                             android:layout_marginTop="130dp"
                             android:fontFamily="@font/opensans"
                             android:gravity="center"
-                            android:text="2,50€"
+                            android:text="3,00€"
                             android:textColor="@color/black"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -289,7 +307,7 @@ tools:context=".TitleFragment">
                             android:layout_marginTop="100dp"
                             android:fontFamily="@font/opensans"
                             android:gravity="center"
-                            android:text="Mozza"
+                            android:text="Kip curry"
                             android:textColor="@color/black"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -300,7 +318,7 @@ tools:context=".TitleFragment">
                             android:layout_marginTop="130dp"
                             android:fontFamily="@font/opensans"
                             android:gravity="center"
-                            android:text="3,50€"
+                            android:text="5,00€"
                             android:textColor="@color/black"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -317,17 +335,6 @@ tools:context=".TitleFragment">
                 </RelativeLayout>
 
             </LinearLayout>
-            <Button
-                android:layout_gravity="center"
-                android:id="@+id/buttonDetails"
-                android:layout_width="342dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:backgroundTint="#B8860B"
-                android:fontFamily="@font/opensans"
-                android:text="@string/buttonDetails"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
         </LinearLayout>
 
 

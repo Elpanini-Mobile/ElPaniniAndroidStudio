@@ -26,7 +26,10 @@ private val retrofit_Gebruiker = Retrofit.Builder()
 interface BroodjesApiService {
 
     @GET("read.php")
-    fun getProperties(): Call<Broodjes>
+    fun getProducten() : String
+
+    @GET("read.php")
+    fun getProperties(): Call<List<Broodjes>>
 
     @GET("readOne.php")
     fun getPropertiesWithCategory(
@@ -49,7 +52,7 @@ object Api_Broodjes {
     }
 }
 object Api_Gebruiker {
-    val retrofitService : BroodjesApiService by lazy{
+    val retrofitService: BroodjesApiService by lazy {
         retrofit_Gebruiker.create(BroodjesApiService::class.java)
     }
 }

@@ -8,5 +8,6 @@ data class Broodjes (
     val category_id: String,
     val category_name: String,
     val price: String,
+    val foto: String
 )
 
